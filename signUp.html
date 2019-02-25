@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title> Sign Up </title>
+    <link type="text/css" rel="stylesheet" href="./css/reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/signUp.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="signUp_wrap">
+        <form action="./signUp.php" method="post">
+            <div class="form-group">
+                <label for="id"> * 아 이 디 : </label>
+                <input class="form-control" type="text" name="id"/>
+                <p>아이디는 한글과 특수문자는 사용불가,&ensp;최대 25자까지 가능</p>
+            </div>
+            <div class="form-group">
+                <label for="pw"> * 패 스 워 드 : </label>
+                <input class="form-control" type="password" name="pw"/>
+                <p>패스워드는 특수문자 사용불가,&ensp;6~12자리만 가능</p>
+            </div>
+            <div class="form-group">
+                <label for="pwc"> * 패스워드 재입력 : </label>
+                <input class="form-control" type="password" name="pwc" />
+            </div>
+
+            <div class="makeSpace1"></div>
+
+            <div class="form-group">
+                <label for="name"> * 이 름 : </label>
+                <input class="form-control" type="text" name="name" />
+                <p>이름에 특수문자,&ensp;숫자 사용불가</p>
+            </div>
+            <div class="form-group">
+                <label for="email"> * 이 메 일 : </label>
+                <input class="form-control" type="text" name="email"/>
+            </div>
+
+            <div class="makeSpace2"></div>
+
+            <div class="signUpBtn">
+                <input class="btn btn-primary" type="submit" value="등 록">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

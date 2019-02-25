@@ -1,0 +1,42 @@
+
+/*main*/
+.main_wrap{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/daylight-environment-forest-459225.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50%;
+}
+
+/*login_part*/
+.login_wrap{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    top: 50%;
+}
+
+.login_wrap label{
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+}
+
+.login_wrap div{
+    position: relative;
+    margin: 0 auto;
+    line-height: 3em;
+}
+
+
+.login_wrap .input_id{
+    width: 200px;
+    height: 30px;
+}
+
+.login_wrap .input_pw{
+    width: 190px;
+    height: 30px;
+}

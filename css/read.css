@@ -1,0 +1,184 @@
+.main_wrap{
+    width: 100%;
+    height: 100%;
+}
+
+#makeSpace{
+    position: relative;
+    top: 100px;
+}
+
+#makeSpace2{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+/*header*/
+.header{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 70px;
+    background-color: rgba(200, 200, 200, 1);
+}
+
+.header a{
+    font-family: "Noto Sans KR", sans-serif;
+    color: black;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 18px;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*table*/
+.container table{
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+table .labelPart{
+    width: 100px;
+}
+
+
+table label{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+table p{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+table td{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+/*button*/
+.btnPart{
+    margin-top: 25px;
+    float: right;
+}
+
+.btnPart button{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+
+/*reply*/
+.replyPart{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.replyInput{
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.replyView{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.replySpace{
+    width: 100%;
+    position: relative;
+    height: 100px;
+}
+
+.replyInput textarea{
+    font-family: 'Noto Sans KR', sans-serif;
+    float: left;
+    width: 70%;
+    margin-right: 10%;
+}
+.replyInput button{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    float: left;
+    width: 20%;
+    height: 90px;
+}
+
+.replyView{
+    width: 100%;
+    border-bottom: solid 1px black;
+}
+
+.replyView div{
+    line-height: 2em;
+}
+
+.replyView .space{
+    position: relative;
+    height: 10px;
+}
+
+.replyModify{
+    display: none;
+}
+
+.modifyBtn{
+    position: relative;
+    width:100%;
+    top: 20px;
+    bottom: 20px;
+}
+
+@media (max-width: 450px) {
+    table .labelPart{
+        width: 90px;
+    }
+    .btnPart{
+        position: relative;
+        display: table;
+        width: 100%;
+        text-align: center;
+    }
+    .btnPart button{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    table .dPart{
+        width: 100px;
+    }
+}
+
+@media (max-width: 321px) {
+
+    table .labelPart{
+        width: 70px;
+    }
+    table label{
+        font-size: 13px;
+    }
+    .replyInput textarea{
+        margin-right: 5%;
+    }
+    .replyInput button{
+        width: 25%;
+    }
+}
+
+

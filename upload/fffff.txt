@@ -1,0 +1,33 @@
+create table board(
+	no int unsigned not null primary key auto_increment,
+	title varchar(100) not null,
+	author varchar(25) not null,
+	content text not null,
+	date datetime not null,
+	hit int unsigned not null default 0
+);
+
+
+create table reply(
+	no int unsigned not null primary key auto_increment,
+	con_no int not null,
+	author varchar(25) not null,
+	content text not null,
+	date datetime not null
+);
+
+insert into reply(con_no,author,content,date) values ('87','venifer1','´ñ±ÛÅ×½ºÆ®1');
+
+
+
+<?php
+
+                $sql3 = mq("SELECT * FROM reply where con_no='".$no."' order by no asc");
+                while($reply = $sql3->fetch_array()){
+
+?>
+
+<?php } ?>
+
+
+$sql2 = mq("INSERT INTO reply (con_no,author,content,date) VALUES ('".$con_no."','".$author."','".$content."','".$date."')");
